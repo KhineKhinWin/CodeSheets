@@ -151,6 +151,9 @@
     <div class="link">
         Already have an account? <a href="login.jsp">Login</a>
     </div>
+    <div class="link">
+        Already have an account? <a href="login.jsp">Cancel</a>
+    </div>
 </div>
 
 </body>

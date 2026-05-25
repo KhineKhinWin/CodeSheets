@@ -6,13 +6,14 @@ import java.sql.SQLException;
 
 public class DBConnection {
     
-    private static final String URL = "jdbc:mysql://localhost:3306/cheatsheet_db?useSSL=false&serverTimezone=UTC";
+	private static final String URL =
+			"jdbc:mysql://localhost:3306/cheatsheet_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String USER = "root";  // မင်း MySQL user
     private static final String PASSWORD = "12345";  // မင်း MySQL password
     
     static {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");                
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
